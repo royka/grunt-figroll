@@ -6,24 +6,6 @@
  * Licensed under the MIT license.
  *
  *
-
-# To get this go to your site it Figroll, look at the URL - you'll see the ID
-SiteId = ""
-
-# Bit more faff to get this - check a GET request made in the Inspector and
-# copy the token
-UploadKey = ""
-
-# Your public folder
-PublicFolder = "/path/to/your/folder"
-
-
-var envs = map[string]string {
-    "dev": "http://localhost:9090",
-    "staging": "https://staging.figroll.io",
-    "production": "https://app.figroll.io:2113",
-}
-
  */
 
 'use strict';
@@ -54,8 +36,6 @@ module.exports = function(grunt) {
 
     var zip = new EasyZip();
     var zipName = new Date().getTime() + '.zip';
-
-    grunt.log.writeln(zipName);
 
     zip.zipFolder(options.buildFolder, function(){
         zip.writeToFile('./' + zipName);
