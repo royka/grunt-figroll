@@ -1,0 +1,45 @@
+{
+  "name": "grunt-figroll",
+  "description": "A plugin to upload a new version of your static site to figroll.io",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sam/grunt-figroll",
+  "author": {
+    "name": "Sam Clift",
+    "email": "samjacobclift@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sam/grunt-figroll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sam/grunt-figroll/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sam/grunt-figroll/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "easy-zip": "0.0.4",
+    "superagent": "^0.21.0"
+  }
+}
