@@ -54,6 +54,7 @@ module.exports = function(grunt) {
             grunt.log.writeln(error);
             grunt.log.writeln(res);
 
+            fs.unlinkSync(dirString + '/' + zipName);
             done();
           });
     });
