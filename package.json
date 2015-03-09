@@ -1,7 +1,7 @@
 {
   "name": "grunt-figroll",
   "description": "A plugin to upload a new version of your static site to figroll.io",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/sam/grunt-figroll",
   "author": {
     "name": "Sam Clift",
