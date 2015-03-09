@@ -1,6 +1,6 @@
 # grunt-figroll
 
-> A plugin to upload a new version of your static site to [figroll.io](http://www.figroll.io)
+> A plugin to upload a new version of your static site to [figroll](http://www.figroll.io)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
