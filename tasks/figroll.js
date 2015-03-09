@@ -38,10 +38,9 @@ module.exports = function(grunt) {
     var zipName = new Date().getTime() + '.zip';
 
     zip.zipFolder(options.buildFolder, function(){
-        zip.writeToFile('./' + zipName);
+        zip.writeToFileSycn('./' + zipName);
 
         grunt.log.writeln('Starting upload');
-
         var dirString = path.dirname(fs.realpathSync('GruntFile.js'));
 
         request
@@ -51,9 +50,6 @@ module.exports = function(grunt) {
           .set('Authorization', options.uploadKey)
           .attach('file', dirString + '/' + zipName)
           .end(function(error, res) {
-            grunt.log.writeln(error);
-            grunt.log.writeln(res);
-
             fs.unlinkSync(dirString + '/' + zipName);
             done();
           });
