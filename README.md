@@ -25,12 +25,12 @@ In your project's Gruntfile, add a section named `figroll` to the data object pa
 ```js
 grunt.initConfig({
   figroll: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+    default_options: {
+      options: {
+        buildFolder: '',
+        siteId: '',
+        uploadKey: ''
+      },
   },
 });
 ```
